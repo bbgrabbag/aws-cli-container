@@ -1,0 +1,20 @@
+# AWS CLI Container Environment
+Portable VS Code container environment for making AWS CLI commands. Includes Node.js, Amazon Q, and AWS extensions.
+
+### Overview
+Execute AWS CLI commands and write Node.js scripts in a container to interact with and manage AWS resources.
+
+### Get Started
+Install dependencies:
+- `npm i`
+
+Verify AWS is installed:
+- `aws --version`
+
+Configure credentials (This will prompt you for credentials. Get these from the AWS IAM console). All configuration files will be stored in container `.aws/` directory:
+- `aws configure` 
+
+Login to Amazon Q and AWS VS Code
+- Click on extensions and follow the prompts to login
+
+

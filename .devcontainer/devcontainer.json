@@ -8,7 +8,11 @@
 	"features": {
 		"ghcr.io/devcontainers/features/aws-cli:1": {}
 	},
-	"onCreateCommand": "chmod +x ./bin/* && npm i",
+	"onCreateCommand": {
+		"make-executable": "chmod +x ./bin/*",
+		"install-deps": "npm i",
+		"create-env": "if [ ! -f .env ]; then cp .env.template .env; fi"
+	},
 	"mounts": [
 		"source=${localWorkspaceFolder}/.aws,type=bind,target=/home/node/.aws,type=bind"
 	],

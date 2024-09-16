@@ -2,12 +2,16 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
 	"name": "AWS CLI",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+	"build": {
+		"dockerfile": "./Dockerfile"
+	},
 	"features": {
 		"ghcr.io/devcontainers/features/aws-cli:1": {}
 	},
-	"onCreateCommand": "npm i",
-	"mounts": ["source=${localWorkspaceFolder}/.aws,type=bind,target=/home/node/.aws,type=bind"],
+	"onCreateCommand": "chmod +x ./bin/* && npm i",
+	"mounts": [
+		"source=${localWorkspaceFolder}/.aws,type=bind,target=/home/node/.aws,type=bind"
+	],
 	"customizations": {
 		"vscode": {
 			"extensions": [

@@ -2,7 +2,6 @@
   "name": "aws-cli",
   "version": "1.0.0",
   "description": "Portable VS Code container environment for making AWS CLI commands. Includes Node.js, Amazon Q, and AWS extensions.",
-  "main": "scripts/main.ts",
   "scripts": {
   },
   "author": "Ben Turner",

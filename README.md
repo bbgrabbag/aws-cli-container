@@ -39,7 +39,7 @@ By default, scripts will run using the `[default]` profile in `.aws/credentials`
 
 To run a node script with the specified profile, run `npx dotenvx run -- ts-node ./scripts/<script-name>.ts`
 
-To run a bash script with the specified profile, run `npx dotenvx run -- ts-node ./bin/<script-name>.sh`
+To run a bash script with the specified profile, run `npx dotenvx run -- ./bin/<script-name>.sh`
 
 > See [documentation](https://docs.aws.amazon.com/cli/v1/userguide/cli-configure-files.html) for `aws configure` command for more details
 
